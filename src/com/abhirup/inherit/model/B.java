@@ -3,6 +3,7 @@ package com.abhirup.inherit.model;
 public class B extends A{
 	private int noB;
 	private String strB;
+	public int x=1000;
 	public B() {
 		super();
 		System.out.println("Without argument constructor in B");
@@ -32,5 +33,17 @@ public class B extends A{
 	public String toString() {
 		return "B [noB=" + noB + ", strB=" + strB + "]";
 	}
+	@Override
+	public void show() {
+		super.show();
+		System.out.println("Show() in B");
+	}
+	
+	public void showX() {
+		System.out.println("A's x= "+super.x);
+		System.out.println("B's x= "+x);
+	}
+	
+
 	
 }

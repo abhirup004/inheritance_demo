@@ -3,6 +3,7 @@ package com.abhirup.inherit.model;
 public class A {
 	private int noA;
 	private String strA;
+	public int x=1000;
 	public A() {
 		super();
 		System.out.println("Without argument constructor in A");
@@ -29,6 +30,9 @@ public class A {
 	@Override
 	public String toString() {
 		return "A [noA=" + noA + ", strA=" + strA + "]";
+	}
+	public void show() {
+		System.out.println("Show() in A");
 	}
 	
 }
